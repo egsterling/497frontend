@@ -1,0 +1,48 @@
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.edit-profile-button {
+    margin-top: 1rem;
+}
+
+.bio {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.game-card {
+    flex-basis: calc(33% - 1rem);  /* 3 cards in a row */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.game-card h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}

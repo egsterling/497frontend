@@ -1,0 +1,41 @@
+/* app.css (add to existing styles) */
+
+.create-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.create-profile-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.create-profile-form input[type="text"],
+.create-profile-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+    resize: vertical;  /* Allow vertical resizing for the textarea */
+}
+
+.create-profile-form input[type="file"] {
+    padding: 0.5rem;
+    border: none;
+}
+
+.submit-button {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #34495e;
+}

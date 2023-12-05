@@ -1,38 +1,110 @@
-.App {
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navItem {
+  font-size: 18px;
+  color: white;
+  margin: 0 30px 0 30px;
+}
+
+.navbar img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+/* Section title styles */
+.section-title {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+  color:rgb(255, 34, 144);
+}
+
+/* Card styles */
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  color:teal;
+}
+
+.card {
+  width: calc(25% - 10px); /* Basic 4 cards per row, adjust as needed */
+  margin-bottom: 20px;
+  background-color: #444;
+  color: white;
+  border: 2px solid rgb(148, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 60%;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card p {
+  font-size: 14px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rating {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  display: block;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  background-color: light grey; /* Placeholder, adjust based on score */
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+/* .arrows {
+  width: 5px;
+  height: 5px;
+} */
+
+.webTitle {
+  font-size: 30px;
   color: white;
+  margin-right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive designs */
+@media (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 10px); /* 3 cards per row on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: calc(50% - 10px); /* 2 cards per row on even smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%; /* 1 card per row on mobile screens */
   }
 }
